@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "tableflow"
+version = "0.1.0"
+description = "A lightweight in-memory table processing library."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["table", "data", "search", "sort", "paginate"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["tableflow*"]
