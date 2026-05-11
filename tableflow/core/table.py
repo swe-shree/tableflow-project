@@ -22,9 +22,8 @@ class Table:
             raise TypeError("data must be a list of dicts")
         self._data = data
 
-    # ------------------------------------------------------------------ #
-    #  Properties                                                          #
-    # ------------------------------------------------------------------ #
+
+    
 
     @property
     def rows(self) -> List[dict]:
@@ -70,10 +69,7 @@ class Table:
         """
         return aggregate(self._data, column, func)
 
-    # ------------------------------------------------------------------ #
-    #  Helpers                                                             #
-    # ------------------------------------------------------------------ #
-
+    
     def to_list(self) -> List[dict]:
         return list(self._data)
 
