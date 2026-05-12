@@ -41,9 +41,7 @@ class Table:
     def __repr__(self) -> str:
         return f"Table(rows={len(self._data)}, columns={self.columns})"
 
-    # ------------------------------------------------------------------ #
-    #  Operations                                                          #
-    # ------------------------------------------------------------------ #
+    
 
     def search(self, query: str, columns: Optional[List[str]] = None) -> "Table":
         """Return a new Table with rows matching *query* (case-insensitive substring)."""
